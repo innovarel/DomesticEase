@@ -32,7 +32,7 @@ export const POST = async (req: NextRequest) => {
     let mailOptions = {
       from: "usmanjutt8132@gmail.com",
       to: email,
-      subject: "Confirm your email - Domestic ease",
+      subject: "Confirm your email -Book Your Oil Change",
       html: `Click here to confirm your email -> <a href='http://localhost:3000/approve?email=${encodeURIComponent(
         email
       )}&password=${encodeURIComponent(password)}'>CONFIRM</a>`,

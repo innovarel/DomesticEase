@@ -15,7 +15,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Electrician Service</h3>
+              <h3>Oil Change Service</h3>
 
               <a className="btn" href="/electrician">
                 Book Now
@@ -31,7 +31,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Plumbing Service</h3>
+              <h3>Mobile Mechanic Service</h3>
 
               <a className="btn" href="/plumber">
                 Book Now
@@ -95,7 +95,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Car Services</h3>
+              <h3>Lock Smith Service</h3>
 
               <a className="btn" href="/car_cleaning">
                 Book Now

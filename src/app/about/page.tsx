@@ -24,16 +24,16 @@ const Page = () => {
                   Providing Convenient and Efficient Services at your doorstep
                 </h2>
                 <p>
-                  The main goal of Domestic Ease is to make peoples lives easier
-                  and more convenient by bringing various services right to
-                  their doorsteps. We understand that households often struggle
-                  to find skilled service providers at convenient times. Our aim
-                  is to address this issue by ensuring customer safety,
-                  improving work quality, and Providing Convenient and Efficient
-                  Services.
+                Book Your Oil Change is the premier marketplace for mobile automotive services, 
+                designed to bring trusted professionals directly to your doorstep. 
+                Whether you need an oil change, tire rotation, or other vehicle maintenance, 
+                our platform connects you with top-rated service providers who offer convenience, 
+                quality, and safety. Say goodbye to waiting in long lines at the shop and experience 
+                hassle-free, on-demand automotive services tailored to fit your schedule. 
+                With Book Your Oil Change, getting your car serviced has never been easier.
                 </p>
                 <a className="btn" href="">
-                  Learn More
+                  Find A Provider
                 </a>
               </div>
             </div>
@@ -50,14 +50,14 @@ const Page = () => {
                 <h2>Skilled Professional At Your Doorstep.</h2>
               </div>
               <p>
-                Domestic Ease aims to provide a convenient solution to every
-                house who face difficulties in finding the work related person
-                in different areas.We offer a wide range of solutions to meet
+                BYOC aims to provide a convenient solution to every
+                house who face difficulties in finding a mobile mechanic
+                in different areas. We offer a wide range of solutions to meet
                 your needs, all designed with you in mind. Our trusted service
                 providers are skilled and equipped with advanced tools to get
                 the job done right. Youll love how easy it is to book services
                 and manage appointments, all while being part of a helpful
-                community. The app will benefit both labour and house owners by
+                community. The app will benefit both providers and vehicle owners by
                 enabling them to connect in real time.
               </p>
             </div>
@@ -69,7 +69,7 @@ const Page = () => {
                 <div className="col-7">
                   <h3>Verified and Trained Technicians</h3>
                   <p>
-                    Our technicians are the best in the business. Theyre
+                    Our technicians are the best in the business. They're
                     background-verified, trustworthy, and experts in their
                     respective fields.
                   </p>

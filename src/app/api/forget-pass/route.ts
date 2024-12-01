@@ -31,7 +31,7 @@ export const POST = async (req: NextRequest) => {
     let mailOptions = {
       from: "basitdev76@gmail.com",
       to: email,
-      subject: "Reset password - Domestic ease",
+      subject: "Reset password -Book Your Oil Change",
       html: `Click here to reset your password -> <a href='http://localhost:3000/reset?email=${encodeURIComponent(
         email
       )}&password=${encodeURIComponent(password)}'>RESET</a>`,

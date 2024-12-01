@@ -20,7 +20,7 @@ export const POST = async (req: NextRequest) => {
     let mailOptions = {
       from: "usmanjutt8132@gmail.com",
       to: email,
-      subject: "New order - Domestic ease",
+      subject: "New order -Book Your Oil Change",
       html: `You received a new order check now on your portal.`,
     };
 

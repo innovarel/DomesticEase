@@ -20,7 +20,7 @@ export default function Component() {
               Expert home cleaner Services
             </h1>
             <p className=" max-w-2xl text-gray-600 dark:text-gray-400 text-lg">
-              Reliable and affordable home cleaning services for your home or
+              Reliable and affordable Roadside Assistance s for your home or
               business. From installations to repairs, our team of skilled home
               cleaners has you covered.
             </p>

@@ -1,4 +1,4 @@
-// File: C:\Users\DELL\Desktop\DOMESTIC-EASE\src\app\signin\page.tsx
+// File: /workspaces/DomesticEase/src/app/signin/page.tsx
 import * as entry from '../../../../src/app/signin/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,6 +1,6 @@
 export const serviceOptions = [
   {
-    label: "Electrician services",
+    label: "Oil Change Services",
     value: "electrician",
   },
   {
@@ -8,7 +8,7 @@ export const serviceOptions = [
     value: "plumber",
   },
   {
-    label: "Home cleaning services",
+    label: "Roadside Assistance s",
     value: "home_cleaning",
   },
   {
@@ -16,7 +16,7 @@ export const serviceOptions = [
     value: "car_cleaning",
   },
   {
-    label: "Pest control services",
+    label: "Washing And Detailing Services",
     value: "pest_control",
   },
   {

@@ -17,7 +17,7 @@ export default function Component() {
         <div className="container px-4 md:px-6 grid gap-10 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Expert Electrician Services
+              Expert Oil Change Services
             </h1>
             <p className=" max-w-2xl text-gray-600 dark:text-gray-400 text-lg">
               Reliable and affordable electrical services for your home or
@@ -118,7 +118,7 @@ export default function Component() {
               Why Choose Us?
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
-              Our electrician services stand out from the rest with these key
+              Our Oil Change Services stand out from the rest with these key
               advantages.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function Component() {
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
               Hear from our satisfied customers about their experience with our
-              electrician services.
+              Oil Change Services.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

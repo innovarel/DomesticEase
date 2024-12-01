@@ -18,33 +18,36 @@ import { getAllReviews } from "./actions/review";
 import { getAllItems } from "./actions/items";
 
 export default function Home() {
-  const { data: reviews, isLoading } = useQuery({
+  const { data: reviews, isLoading: reviewsLoading } = useQuery({
     queryKey: ["reviews-admin"],
     queryFn: async () => getAllReviews(),
   });
-  const { data: items, isLoading: isitemLoading } = useQuery({
+  const { data: items, isLoading: itemsLoading } = useQuery({
     queryKey: ["items-admin"],
     queryFn: async () => getAllItems(),
   });
-  console.log({ items });
+
   return (
     <>
       <div className="header home">
         <div className="container-fluid">
           <div className="hero row align-items-center">
             <div className="col-md-7">
-              <h2>Best & Trusted</h2>
+              <h2>Book Fast, Convenient, and Affordable Oil Changes – Anytime, Anywhere!</h2>
               <h2>
                 <span>Home</span> Service
               </h2>
-              <a className="btn" href="/book">
+              <Button as="a" href="/book" variant="solid" colorScheme="blue">
                 Book Now
-              </a>
+              </Button>
             </div>
             <div className="col-md-5">
-              <img
+              <Image
                 src="/home.jpeg"
                 alt="Service"
+                layout="intrinsic"
+                width={500}
+                height={350}
                 style={{
                   margin: "auto",
                   borderRadius: "20px",
@@ -60,134 +63,54 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-5 col-md-6">
               <div className="about-img">
-                <img src="/cover.avif" alt="Image" />
+                <Image src="/cover.avif" alt="Image" width={500} height={350} />
               </div>
             </div>
             <div className="col-lg-7 col-md-6">
               <div className="about-text">
-                <h2>
-                  {" "}
-                  Providing Convenient and Efficient Services at your doorstep
-                </h2>
+                <h2>Providing Convenient and Efficient Services at Your Doorstep</h2>
                 <p>
-                  The main goal of Domestic Ease is to make peoples lives easier
+                  The main goal of Book Your Oil Change is to make people's lives easier
                   and more convenient by bringing various services right to
                   their doorsteps. We understand that households often struggle
                   to find skilled service providers at convenient times. Our aim
                   is to address this issue by ensuring customer safety,
-                  improving work quality, and Providing Convenient and Efficient
-                  Services.
+                  improving work quality, and providing convenient services.
                 </p>
-                <a className="btn" href="/about">
+                <Button as="a" href="/about" variant="outline" colorScheme="blue">
                   Learn More
-                </a>
-                
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="service" id="s2">
         <div className="container">
           <div className="section-header">
             <h2>Our Services</h2>
           </div>
           <div className="row">
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/1.svg"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Electrician Service</h3>
-                <a className="btn" href="/electrician">
-                  Book Now
-                </a>
+            {['Electrician', 'Plumbing', 'Carpenter', 'Pest Control', 'Home Cleaning', 'Lock Smith Service'].map((service, index) => (
+              <div className="col-12 col-md-6 col-lg-4" key={index}>
+                <div className="service-item">
+                  <Image
+                    src={`/${index + 1}.svg`}
+                    alt={service}
+                    width={200}
+                    height={200}
+                    style={{
+                      margin: "auto",
+                    }}
+                  />
+                  <h3>{service} Service</h3>
+                  <Button as="a" href={`/${service.toLowerCase().replace(' ', '')}`} variant="solid" colorScheme="blue">
+                    Book Now
+                  </Button>
+                </div>
               </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/2.svg"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Plumbing Service</h3>
-
-                <a className="btn" href="/plumber">
-                  Book Now
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/3.svg"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Carpenter</h3>
-
-                <a className="btn" href="/carpentry">
-                  Book Now
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/4.png"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Pest Control</h3>
-
-                <a className="btn" href="/pest_control">
-                  Book Now
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/5.webp"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Home Cleaning</h3>
-
-                <a className="btn" href="/homecleaning">
-                  Book Now
-                </a>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="service-item">
-                <img
-                  src="/6.png"
-                  alt="Service"
-                  style={{
-                    margin: "auto",
-                  }}
-                />
-                <h3>Car Services</h3>
-
-                <a className="btn" href="/car_cleaning">
-                  Book Now
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -198,67 +121,62 @@ export default function Home() {
             <h2>Our Product</h2>
           </div>
           <div className="row">
-          <Flex
-            flexWrap="wrap"
-            justifyContent="center"
-            alignItems="flex-start"
-            gap="20px"
-          >
-            {items?.map((item: any) => (
-              <div
-                key={item.id}
-                className="store-item"
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  width: "100%",
-                  maxWidth: "300px",
-                }}
-              >
-                <img
-                  src={`/api/get-image/${item.imageName}`}
-                  alt="Service"
+            <Flex
+              flexWrap="wrap"
+              justifyContent="center"
+              alignItems="flex-start"
+              gap="20px"
+            >
+              {items?.map((item: any) => (
+                <div
+                  key={item.id}
+                  className="store-item"
                   style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                     width: "100%",
-                    maxWidth: "250px",
-                    height: "auto",
-                    objectFit: "cover",
+                    maxWidth: "300px",
                   }}
-                />
-                <p>{item.name}</p>
-                <h5>{item.description}</h5>
-                <h6> ₨ {item.price}</h6>
-                <button
-                  style={{
-                    padding: "10px",
-                    borderRadius: "10px",
-                    background: "#6666FF",
-                    color: "white",
-                    border: "none",
-                    marginBottom: "10px",
-                  }}
-                  className="snipcart-add-item"
-                  data-item-id={"20"}
-                  data-item-price={"50.0"}
-                  data-item-description={item.description}
-                  data-item-image={`/api/get-image/${item.imageName}`}
-                  data-item-name={item.name}
-                  data-item-url={process.env.url}
                 >
-                  Add to cart
-                </button>
-              </div>
-            ))}
-          </Flex>
+                  <Image
+                    src={`/api/get-image/${item.imageName}`}
+                    alt={item.name}
+                    width={250}
+                    height={250}
+                    objectFit="cover"
+                  />
+                  <Text>{item.name}</Text>
+                  <Text fontSize="md" color="gray.600">
+                    {item.description}
+                  </Text>
+                  <Text fontSize="xl" fontWeight="bold">
+                    ₨ {item.price}
+                  </Text>
+                  <Button
+                    variant="solid"
+                    colorScheme="blue"
+                    className="snipcart-add-item"
+                    data-item-id={item.id}
+                    data-item-price={item.price}
+                    data-item-description={item.description}
+                    data-item-image={`/api/get-image/${item.imageName}`}
+                    data-item-name={item.name}
+                    data-item-url={process.env.url}
+                  >
+                    Add to Cart
+                  </Button>
+                </div>
+              ))}
+            </Flex>
           </div>
         </div>
       </div>
- 
+
       <div className="testimonial">
         <div className="container">
           <div className="section-header">
-            <h2>Client Review</h2>
+            <h2>Client Reviews</h2>
           </div>
 
           <Grid
@@ -274,19 +192,18 @@ export default function Home() {
                 <Box bg="white" rounded="lg" shadow="md" p={6} textAlign="left">
                   <VStack alignItems="start" spacing={4}>
                     <HStack spacing={4}>
-                      <img
+                      <Image
                         src={
                           review.image
                             ? `/api/get-image/${review.image}`
                             : "/user.png"
                         }
-                        alt=""
+                        alt="User Avatar"
+                        width={100}
+                        height={100}
                         style={{
-                          margin: "auto",
                           objectFit: "contain",
                           borderRadius: "50%",
-                          width: "100px",
-                          height: "100px",
                         }}
                       />
                       <VStack alignItems="start" spacing={1}>
@@ -303,15 +220,13 @@ export default function Home() {
                     <Text color="gray.600">{review.review}</Text>
                     {review.videoName && (
                       <Flex gap={2}>
-                        <img
+                        <Image
                           src={`/api/get-image/${review.videoName}`}
-                          alt=""
-                          style={{
-                            objectFit: "cover",
-                            borderRadius: "50%",
-                            width: "100px",
-                            height: "100px",
-                          }}
+                          alt="Review Video"
+                          width={100}
+                          height={100}
+                          objectFit="cover"
+                          borderRadius="8px"
                         />
                         <video
                           src={`/api/get-image/${review.videoName}`}

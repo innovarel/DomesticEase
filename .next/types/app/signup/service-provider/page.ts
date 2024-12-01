@@ -1,4 +1,4 @@
-// File: C:\Users\DELL\Desktop\DOMESTIC-EASE\src\app\signup\service-provider\page.tsx
+// File: /workspaces/DomesticEase/src/app/signup/service-provider/page.tsx
 import * as entry from '../../../../../src/app/signup/service-provider/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
