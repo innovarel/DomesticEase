@@ -64,8 +64,8 @@ export const Header = () => {
           <div className="col-lg-9">
             <div className="topbar">
               <div className="topbar-col">
-                <a href="tel:+92 349 7137172">
-                  <i className="fa fa-phone-alt"></i>+92 349 7137172
+                <a href="tel:1 844 951 4666">
+                  <i className="fa fa-phone-alt"></i>1 844 951 4666
                 </a>
               </div>
               <div className="topbar-col">

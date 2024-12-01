@@ -10,7 +10,7 @@ export const Footer = () => {
                 <i className="fa fa-map-marker-alt"></i> Millat Town, FSD
               </p>
               <p>
-                <i className="fa fa-phone-alt"></i>+92 349 7137172
+                <i className="fa fa-phone-alt"></i>1 844 951 4666
               </p>
               <p>
                 <i className="fa fa-envelope"></i>mail@bookyouroilchange.com
