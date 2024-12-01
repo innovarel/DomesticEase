@@ -39,26 +39,26 @@ export default function Component() {
             <div className="bg-white dark:bg-black rounded-lg shadow-md p-6 space-y-4">
               <CloudLightningIcon className="w-10 h-10 text-blue-500" />
               <h3 className="text-xl font-semibold">
-                home cleaning Installations
+                Roadside Assistance Installations
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
                 From new construction to home renovations, we handle all your
-                home cleaning installation needs.
+                Roadside Assistance installation needs.
               </p>
             </div>
             <div className="bg-white dark:bg-[#242424] rounded-lg shadow-md p-6 space-y-4">
               <BoldIcon className="w-10 h-10 text-blue-500" />
-              <h3 className="text-xl font-semibold">home cleaning Repairs</h3>
+              <h3 className="text-xl font-semibold">Roadside Assistance Repairs</h3>
               <p className="text-gray-600 dark:text-gray-400">
                 Our experienced home cleaners are ready to diagnose and fix any
-                home cleaning issues in your home or business.
+                Roadside Assistance issues in your home or business.
               </p>
             </div>
             <div className="bg-white  rounded-lg shadow-md p-6 space-y-4">
               <PlugIcon className="w-10 h-10 text-blue-600" />
               <h3 className="text-xl font-semibold">Maintenance & Upgrades</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Keep your home cleaning system running smoothly with our regular
+                Keep your Roadside Assistance system running smoothly with our regular
                 maintenance and upgrade services.
               </p>
             </div>
@@ -66,7 +66,7 @@ export default function Component() {
               <WrenchIcon className="w-10 h-10 text-blue-600" />
               <h3 className="text-xl font-semibold">Emergency Services</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Dont worry, were available 24/7 to handle any home cleaning
+                Dont worry, were available 24/7 to handle any Roadside Assistance
                 emergencies you may have.
               </p>
             </div>

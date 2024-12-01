@@ -8,7 +8,7 @@ import { getReviewsType } from "../actions/review";
 
 export default function Component() {
   const { data } = useQuery({
-    queryKey: ["Carpenter"],
+    queryKey: ["Brakes Service"],
     queryFn: () => getReviewsType("carpentry"),
   });
   return (
@@ -50,7 +50,7 @@ export default function Component() {
               <BoldIcon className="w-10 h-10 text-blue-500" />
               <h3 className="text-xl font-semibold">Carpenting Repairs</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our experienced Carpenters are ready to diagnose and fix any
+                Our experienced Brakes Services are ready to diagnose and fix any
                 Carpenting issues in your home or business.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function Component() {
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
               Our simple 3-step process makes it easy to schedule an appointment
-              with one of our skilled Carpenters.
+              with one of our skilled Brakes Services.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -104,7 +104,7 @@ export default function Component() {
               <WrenchIcon className="w-12 h-12 mx-auto text-[#0070f3]" />
               <h3 className="text-2xl font-semibold">Service</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our skilled Carpenter will arrive on time and provide expert
+                Our skilled Brakes Service will arrive on time and provide expert
                 service.
               </p>
             </div>
@@ -135,7 +135,7 @@ export default function Component() {
               <WrenchIcon className="w-10 h-10 text-[#0070f3]" />
               <h3 className="text-xl font-semibold">Expert Technicians</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our team of licensed and experienced Carpenters are dedicated to
+                Our team of licensed and experienced Brakes Services are dedicated to
                 providing top-notch service.
               </p>
             </div>

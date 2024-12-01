@@ -11,14 +11,14 @@ export const POST = async (req: NextRequest) => {
     let transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: "usmanjutt8132@gmail.com",
+        user: "mail@bookyouroilchange.com",
         pass: "ncsyaivxpcudqrye",
       },
     });
 
     // Define email options
     let mailOptions = {
-      from: "usmanjutt8132@gmail.com",
+      from: "mail@bookyouroilchange.com",
       to: email,
       subject: "New order -Book Your Oil Change",
       html: `You received a new order check now on your portal.`,

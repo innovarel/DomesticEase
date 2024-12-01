@@ -72,4 +72,4 @@ $ npm run build
 DomesticEase - Simplifying household management, meticulously crafted by Muhammad Usman.
 
 ## Contact
-For inquiries or collaboration opportunities, reach out to Muhammad Usman at usmanjutt8132@gmail.com.
+For inquiries or collaboration opportunities, reach out to Muhammad Usman at mail@bookyouroilchange.com.

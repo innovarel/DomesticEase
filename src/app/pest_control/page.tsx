@@ -8,7 +8,7 @@ import { getReviewsType } from "../actions/review";
 
 export default function Component() {
   const { data } = useQuery({
-    queryKey: ["Pest controller"],
+    queryKey: ["Washing And Detailingler"],
     queryFn: () => getReviewsType("pest_control"),
   });
   return (
@@ -17,10 +17,10 @@ export default function Component() {
         <div className="container px-4 md:px-6 grid gap-10 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Expert Pest controller Services
+              Expert Washing And Detailingler Services
             </h1>
             <p className=" max-w-2xl text-gray-600 dark:text-gray-400 text-lg">
-              Reliable and affordable Pest controlling services for your home or
+              Reliable and affordable Washing And Detailingling services for your home or
               business. From installations to repairs, our team of skilled home
               cleaners has you covered.
             </p>
@@ -39,28 +39,28 @@ export default function Component() {
             <div className="bg-white dark:bg-black rounded-lg shadow-md p-6 space-y-4">
               <CloudLightningIcon className="w-10 h-10 text-blue-500" />
               <h3 className="text-xl font-semibold">
-                Pest controlling Installations
+                Washing And Detailingling Installations
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
                 From new construction to home renovations, we handle all your
-                Pest controlling installation needs.
+                Washing And Detailingling installation needs.
               </p>
             </div>
             <div className="bg-white dark:bg-[#242424] rounded-lg shadow-md p-6 space-y-4">
               <BoldIcon className="w-10 h-10 text-blue-500" />
               <h3 className="text-xl font-semibold">
-                Pest controlling Repairs
+                Washing And Detailingling Repairs
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our experienced Pest controllers are ready to diagnose and fix
-                any Pest controlling issues in your home or business.
+                Our experienced Washing And Detailinglers are ready to diagnose and fix
+                any Washing And Detailingling issues in your home or business.
               </p>
             </div>
             <div className="bg-white  rounded-lg shadow-md p-6 space-y-4">
               <PlugIcon className="w-10 h-10 text-blue-600" />
               <h3 className="text-xl font-semibold">Maintenance & Upgrades</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Keep your Pest controlling system running smoothly with our
+                Keep your Washing And Detailingling system running smoothly with our
                 regular maintenance and upgrade services.
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function Component() {
               <WrenchIcon className="w-10 h-10 text-blue-600" />
               <h3 className="text-xl font-semibold">Emergency Services</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Dont worry, were available 24/7 to handle any Pest controlling
+                Dont worry, were available 24/7 to handle any Washing And Detailingling
                 emergencies you may have.
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function Component() {
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
               Our simple 3-step process makes it easy to schedule an appointment
-              with one of our skilled Pest controllers.
+              with one of our skilled Washing And Detailinglers.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -106,7 +106,7 @@ export default function Component() {
               <WrenchIcon className="w-12 h-12 mx-auto text-[#0070f3]" />
               <h3 className="text-2xl font-semibold">Service</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our skilled Pest controller will arrive on time and provide
+                Our skilled Washing And Detailingler will arrive on time and provide
                 expert service.
               </p>
             </div>
@@ -120,7 +120,7 @@ export default function Component() {
               Why Choose Us?
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
-              Our Pest controller services stand out from the rest with these
+              Our Washing And Detailingler services stand out from the rest with these
               key advantages.
             </p>
           </div>
@@ -137,7 +137,7 @@ export default function Component() {
               <WrenchIcon className="w-10 h-10 text-[#0070f3]" />
               <h3 className="text-xl font-semibold">Expert Technicians</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Our team of licensed and experienced Pest controllers are
+                Our team of licensed and experienced Washing And Detailinglers are
                 dedicated to providing top-notch service.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function Component() {
             </h2>
             <p className="max-w-[600px] mx-auto text-gray-600 dark:text-gray-400 text-lg">
               Hear from our satisfied customers about their experience with our
-              Pest controller services.
+              Washing And Detailingler services.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -47,7 +47,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Carpenter</h3>
+              <h3>Brakes Service</h3>
 
               <a className="btn" href="/carpentry">
                 Book Now
@@ -63,7 +63,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Pest Control</h3>
+              <h3>Washing And Detailing</h3>
 
               <a className="btn" href="/pest_control">
                 Book Now
@@ -79,7 +79,7 @@ const Page = () => {
                   margin: "auto",
                 }}
               />
-              <h3>Home Cleaning</h3>
+              <h3>Roadside Assistance</h3>
 
               <a className="btn" href="/homecleaning">
                 Book Now

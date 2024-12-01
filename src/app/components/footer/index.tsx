@@ -13,7 +13,7 @@ export const Footer = () => {
                 <i className="fa fa-phone-alt"></i>+92 349 7137172
               </p>
               <p>
-                <i className="fa fa-envelope"></i>usmanjutt8132@gmail.com
+                <i className="fa fa-envelope"></i>mail@bookyouroilchange.com
               </p>
             </div>
           </div>

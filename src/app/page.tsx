@@ -92,7 +92,7 @@ export default function Home() {
             <h2>Our Services</h2>
           </div>
           <div className="row">
-            {['Electrician', 'Plumbing', 'Carpenter', 'Pest Control', 'Home Cleaning', 'Lock Smith Service'].map((service, index) => (
+            {['Electrician', 'Plumbing', 'Brakes Service', 'Washing And Detailing', 'Roadside Assistance', 'Lock Smith Service'].map((service, index) => (
               <div className="col-12 col-md-6 col-lg-4" key={index}>
                 <div className="service-item">
                   <Image
